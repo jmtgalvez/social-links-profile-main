@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: Inter;
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+
+    :root {
+      --color-primary: hsl(75, 94%, 57%);
+      --color-white: hsl(0, 0%, 100%);
+      --color-grey: hsl(0, 0%, 20%);
+      --color-darkgrey: hsl(0, 0%, 12%);
+      --color-offblack: hsl(0, 0%, 8%);
+    }
+
+    body {
+      max-width: 100vw;
+      min-height: 100vh;
+
+      display: grid;
+      align-items: center;
+      justify-content: center;
+
+      font-family: Inter;
+      font-size: 14px;
+      background: var(--color-offblack);
+    }
+
+    .card {
+      max-width: 90%;
+      padding: 2em;
+      border-radius: 1em;
+
+      background: var(--color-darkgrey);
+      
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1em;
+
+      color: var(--color-white);
+      text-align: center;
+    }
+
+    .card * {
+      margin: 0;
+    }
+
+    .card img {
+      width: 30%;
+      margin: auto;
+      border-radius: 50%;
+    }
+
+    .card h1 {
+      font-size: 1.5em;
+    }
+
+    .card h3 {
+      color: var(--color-primary);
+      font-size: .9em;
+    }
+
+    .card p {
+      margin: 1em 0;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1em;
+    }
+
+    .links a {
+      width: 90%;
+      padding: 1em;
+      border-radius: .5em;
+
+      background: var(--color-grey);
+      
+      color: var(--color-white);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .links a:hover {
+      cursor: pointer;
+      background: var(--color-primary);
+      color: var(--color-offblack);
+      font-weight: 700;
+    }
+
+    .attribution { font-size: 11px; text-align: center; width: 90%; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="./assets/images/avatar-jessica.jpeg" alt="profile-picture">
+    <h1>Jessica Randall</h1>
+    <h3>London, United Kingdom</h3>
+    <p>"Front-end developer and avid reader."</p>
+
+    
+    <div class="links">
+      <a href="">GitHub</a>
+      <a href="">Frontend Mentor</a>
+      <a href="">LinkedIn</a>
+      <a href="">Twitter</a>
+      <a href="">Instagram</a>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Miguel Galvez</a>.
+  </div>
+</body>
+</html>
